@@ -11,36 +11,26 @@
 
         <body>
 
+       
+        <br><br><br><br>
+
         <div class="container">
 
-            <div class="col-xs-2">
+            <div class="col-xs-6">
 
-            <?php $this->load->view('home/index'); ?>
-
-            </div>
-
-            
-
-
-        	<div class="col-xs-3">
-
-            
-
-        	</div>
-
-        	<div class="col-xs-4">
-
-        	
-
-        	</div>
-
-            <div class="col-xs-3">
-
-            
+            <?php $this->load->view('home_view'); ?>
 
             </div>
+
+
+        	<div class="col-xs-6">
+
+
+        	</div>
 
         </div>
 
-		</body>
+
+        </body>
+
 </html>

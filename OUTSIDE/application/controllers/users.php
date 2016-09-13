@@ -78,6 +78,7 @@ class Users extends CI_Controller {
 
 		$this->session->set_userdata($user_data);
 
+		$this->load->view('layouts/account');
 		redirect('home/index');
 
 		}
