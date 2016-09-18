@@ -5,6 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Users extends CI_Controller {
 
 
+
 	public function index() {  
 
 	$this->load->view('layouts/main');	
@@ -23,7 +24,7 @@ class Users extends CI_Controller {
 
 		if($this->form_validation->run() == FALSE) {
 
-		$data = 'users/register_view';
+		$data['main_view'] = 'users/register_view';
 
 		$this->load->view('layouts/main', $data);
 
@@ -55,7 +56,6 @@ class Users extends CI_Controller {
 
 				);
 
-			$this->session->set_flashdata($data);
 
 			redirect('');
 

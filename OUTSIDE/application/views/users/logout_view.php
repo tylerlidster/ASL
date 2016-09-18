@@ -1,5 +1,5 @@
 
-<?php echo form_open('home/logout'); ?>
+<?php echo form_open('users/logout'); ?>
 
 <?php 
 

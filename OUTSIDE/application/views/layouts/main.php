@@ -18,21 +18,19 @@
 
             <div class="col-xs-2">
 
-
+                <h2>OUTSIDE</h2>
 
             </div>
 
-            
-
-
+            <hr>
         	<div class="col-xs-3">
-
+            <br><br><br><br><br>
             <?php $this->load->view('users/login_view'); ?>
 
         	</div>
 
         	<div class="col-xs-4">
-
+            <br><br><br><br><br>
         	<?php $this->load->view('users/register_view'); ?>
 
         	</div>

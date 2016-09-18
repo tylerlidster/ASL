@@ -16,17 +16,27 @@
 
         <div class="container">
 
-            <div class="col-xs-6">
 
-            <?php $this->load->view('home_view'); ?>
+            <div class="col-xs-4">
+
+            <?php $this->load->view('interests/poi'); ?>            
 
             </div>
 
 
         	<div class="col-xs-6">
 
+            <?php $this->load->view('interests/poi_view'); ?>
 
         	</div>
+
+
+            <div class="col-xs-2">
+
+            <?php $this->load->view('users/logout_view'); ?>
+
+            </div>
+
 
         </div>
 
