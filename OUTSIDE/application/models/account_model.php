@@ -18,6 +18,7 @@ class Account_model extends CI_Model {
 
 
 		$insert_data = $this->db->insert('poi', $data);
+
 		return $insert_data;
 
 	}

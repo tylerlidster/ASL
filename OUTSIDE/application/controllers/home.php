@@ -16,11 +16,14 @@ class Home extends CI_Controller {
 		}
 	}
 
+
+
+
+
 	public function index() {  
 
 
 	$data['interests'] = $this->account_model->get_interests();
-
 
 	$data['main_view'] = 'interests/poi_view';
 
