@@ -28,52 +28,35 @@
 
         <div class="container">
 
-
-
 		<div class="col-xs-12">
 
 			<br><br><br>
 
-		<table class="table table-hover">
-    	
-    	<thead>
-      		<tr>
-        		<th>CATGEORY</th>
-        		<th>NAME</th>
-        		<th>ADDRESS</th>
-        		<th>CITY</th>
-        		<th>STATE</th>
-        		<th></th>
-        		<th></th>
-      		</tr>
-    	</thead>
-    	
-    	<tbody class="text-uppercase">
-
+<ul class="text-uppercase">
+		
 		<?php foreach($interest_data as $interest): ?>
 
-		<tr>
+	
 
-		<?php echo "<td>" . $interest->category . "</td>"; ?>
+		<li class="list-group-item"><h4>Category</h4><br><?php echo $interest->category; ?></li>
 
-		<?php echo "<td>" . $interest->name . "</td>"; ?>
+		<li class="list-group-item"><h4>Name</h4><br><?php echo $interest->name; ?></li>
 
-		<?php echo "<td>" . $interest->address . "</td>"; ?>
+		<li class="list-group-item"><h4>Address</h4><br><?php echo $interest->address; ?></li>
 
-		<?php echo "<td>" . $interest->city . "</td>"; ?>
+		<li class="list-group-item"><h4>City</h4><br><?php echo $interest->city; ?></li>
 
-		<?php echo "<td>" . $interest->state . "</td>"; ?>
+		<li class="list-group-item"><h4>State</h4><br><?php echo $interest->state; ?></li>
 
-		<td><a href="http://localhost:8888/OUTSIDE/home/edit/<?php echo $interest->id; ?>" class="btn-xs btn-primary" type="button">Edit</a></td>
+<br>
 
-		<td><a href="http://localhost:8888/OUTSIDE/home/delete/<?php echo $interest->id; ?>" class="btn-xs btn-primary" type="button">Delete</a></td>
+		<a href="http://localhost:8888/OUTSIDE/home/edit/<?php echo $interest->id; ?>" class="btn-lg btn-primary" type="button">Edit</a>
 
-		</tr>
+		<a href="http://localhost:8888/OUTSIDE/home/delete/<?php echo $interest->id; ?>" class="btn-lg btn-primary" type="button">Delete</a>
 
 		<?php endforeach; ?>
 
-		</tbody>
-  		</table>
+</ul>
 
   	</div>
     </div>
