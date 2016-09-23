@@ -1,31 +1,33 @@
 <h2>Insert Address</h2>
+<br>
 
 <?php $attributes = array('id' => 'poi_form', 'class' => 'form_horizontal'); ?>
 
 <!--FORM OPEN-->
 <?php echo form_open('home/save_poi', $attributes); ?>
 
-<div class="form-group">
-
+<div class="dropdown">
 <?php echo form_label('Category'); ?>
 <br>
 
 <?php
 
 $data = array(
-	
-	'class' => 'form-control',
-	'name' => 'category'
 
-	);
+	'life' => 'LIFE',
+	'work' => 'WORK',
+	'other' => 'OTHER'
+
+);
+
 ?>
 
-<?php echo form_input($data); ?>
+<?php echo form_dropdown('category', $data, 'life'); ?>
 
 </div>
 
 
-
+<br>
 <div class="form-group">
 
 <?php echo form_label('Name'); ?>

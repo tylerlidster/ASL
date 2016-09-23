@@ -5,7 +5,7 @@
 
 	$data = array(
 
-		'class'=> 'btn btn-primary',
+		'class'=> 'btn-lg btn-default',
 		'name'=> 'submit',
 		'value'=> 'Logout'
 

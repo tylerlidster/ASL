@@ -1,4 +1,5 @@
-<h2 class="pull-right">Saved Locations</h2>
+<h2>Saved</h2>
+<br>
 
 <table class="table table-hover">
 	<thead>
@@ -10,13 +11,13 @@
 		</tr>
 	</thead>
 
-	<tbody class="text-uppercase">
+	<tbody>
 
 		<?php foreach($interests as $interest): ?>
 
 		<tr>
 
-		<?php echo "<td><a href='". base_url() ."home/display/" . $interest->id . "'>" . $interest->category . "</a></td>"; ?>
+		<?php echo "<td><a href='". base_url() ."home/display'>" . $interest->category . "</a></td>"; ?>
 
 		<?php echo "<td>" . $interest->name . "</td>"; ?>
 
@@ -27,4 +28,3 @@
 
 	</tbody>
 </table>
-

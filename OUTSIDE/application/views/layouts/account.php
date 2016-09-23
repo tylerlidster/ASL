@@ -11,8 +11,21 @@
 
         <body>
 
-       
-        <br><br><br><br>
+        <nav class="navbar navbar-inverse"><br>
+
+        <div class="container-fluid">
+        
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://localhost:8888/OUTSIDE/">OUTSIDE</a>
+        </div>
+        
+        <ul class="nav navbar-nav pull-right">
+            <li><?php $this->load->view('users/logout_view'); ?></li>
+        </ul>
+        
+        </div>
+        <br>
+        </nav>
 
         <div class="container">
 
@@ -24,18 +37,11 @@
             </div>
 
 
-        	<div class="col-xs-6">
+        	<div class="col-xs-8">
 
             <?php $this->load->view('interests/poi_view'); ?>
 
         	</div>
-
-
-            <div class="col-xs-2">
-
-            <?php $this->load->view('users/logout_view'); ?>
-
-            </div>
 
 
         </div>

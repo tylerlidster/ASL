@@ -11,34 +11,36 @@
 
         <body>
 
-       
-        <br><br><br><br>
+            <nav class="navbar navbar-inverse"><br><br>
 
-        <div class="container">
+            <div class="container-fluid">
+        
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://localhost:8888/OUTSIDE/">OUTSIDE</a>
+            </div>
+        
+            </div>
+            <br><br>
+            </nav>
 
-            <div class="col-xs-2">
+            <div class="container-fluid">
 
-                <h2>OUTSIDE</h2>
-
+            <div class="col-xs-3">
+        
             </div>
 
-            <hr>
         	<div class="col-xs-3">
             <br><br><br><br><br>
             <?php $this->load->view('users/login_view'); ?>
-
         	</div>
 
-        	<div class="col-xs-4">
+        	<div class="col-xs-3">
             <br><br><br><br><br>
         	<?php $this->load->view('users/register_view'); ?>
-
         	</div>
 
             <div class="col-xs-3">
-
-            
-
+        
             </div>
 
         </div>
